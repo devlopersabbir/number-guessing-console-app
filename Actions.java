@@ -30,17 +30,17 @@ public class Actions {
         // take user input
         int userInputedNumber = scnr.nextInt();
         // if user inputed number less then of lowerBound or more then of upperBound
-        if (userInputedNumber >= this.lowerBound && userInputedNumber >= this.upperBound) {
+        if (userInputedNumber < this.lowerBound || userInputedNumber > this.upperBound) {
             System.out.println("Enter the valid number🤒");
             decisionCreator();
         } else {
             int generatedNumber = generate(); // generate random number
 
             if (userInputedNumber == generatedNumber) {
-                System.out.println("Congratulation!");
+                System.out.println("Congratulation!🎉");
                 decisionCreator();
             } else {
-                System.out.println("You are loss!🥲");
+                System.out.println("You are loss!🥲\n Program generate= " + generatedNumber);
                 decisionCreator();
             }
         }
