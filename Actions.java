@@ -6,11 +6,6 @@ public class Actions {
     private int lowerBound;
     private int upperBound;
 
-    enum Selection {
-        YES,
-        NO
-    }
-
     Scanner scnr = new Scanner(System.in);
 
     public void setDetails(String message, int lowerBound, int upperBound) {
@@ -60,7 +55,7 @@ public class Actions {
                 run();
                 break;
             default:
-                System.out.println("Fail to impress you!" + decision);
+                System.out.println("Fail to impress you!");
         }
     }
 }
