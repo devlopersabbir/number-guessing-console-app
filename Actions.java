@@ -29,7 +29,7 @@ public class Actions {
         // take user input
         int userInputedNumber = scnr.nextInt();
         // if user inputed number less then of lowerBound or more then of upperBound
-        if (userInputedNumber < this.lowerBound && userInputedNumber <= this.upperBound) {
+        if (userInputedNumber <= this.lowerBound && userInputedNumber >= this.upperBound) {
             System.out.println("Enter the valid number🤒");
         } else {
             int generatedNumber = generate();
